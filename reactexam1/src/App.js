@@ -3,7 +3,7 @@ import './App.css';
 function App() {
 
 
-  let name = "신기해";
+  let name = "신기해 커밋테스트";
 
   return (
     <div className="App">
