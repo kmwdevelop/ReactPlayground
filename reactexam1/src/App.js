@@ -1,25 +1,22 @@
 import './App.css';
+import MyFooter from './MyFooter';
+import MyHeader from './MyHeader';
 
 function App() {
 
 
   let name = "신기해 커밋테스트";
 
+  const func = () => {
+    return 'func';
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> {name}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyHeader/>
+      <h2>안녕 리액트 {name} {func()} </h2>
+      <b id="bold_text">React.js</b>
+      <MyFooter/>
     </div>
   );
 }
