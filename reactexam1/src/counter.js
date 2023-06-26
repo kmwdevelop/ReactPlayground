@@ -1,4 +1,5 @@
 import { useState } from "react";
+import OddEventResult from "./OddEventResult";
 
 const Counter = (props) => {
   console.log(props);
@@ -17,6 +18,7 @@ const Counter = (props) => {
       <h2>{count}</h2>
       <button onClick={onIncrease}>+</button>
       <button onClick={onDecrease}>-</button>
+      <OddEventResult count={count}></OddEventResult>
     </div>
   );
 };
