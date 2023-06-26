@@ -1,4 +1,5 @@
 import "./App.css";
+import Container from "./Containter";
 import MyFooter from "./MyFooter";
 import MyHeader from "./MyHeader";
 import Counter from "./counter";
@@ -12,13 +13,15 @@ function App() {
 
   return (
     <div className="App">
-      <MyHeader />
-      <h2>
-        안녕 리액트 {name} {func()}{" "}
-      </h2>
-      <b id="bold_text">React.js</b>
-      <MyFooter />
-      <Counter initialValue={{ a: 2 }} />
+      <Container>
+        <MyHeader />
+        <h2>
+          안녕 리액트 {name} {func()}{" "}
+        </h2>
+        <b id="bold_text">React.js</b>
+        <MyFooter />
+        <Counter initialValue={{ a: 2 }} />
+      </Container>
     </div>
   );
 }
