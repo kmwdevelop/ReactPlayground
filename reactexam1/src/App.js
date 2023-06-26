@@ -18,7 +18,7 @@ function App() {
       </h2>
       <b id="bold_text">React.js</b>
       <MyFooter />
-      <Counter />
+      <Counter initialValue={{ a: 2 }} />
     </div>
   );
 }
